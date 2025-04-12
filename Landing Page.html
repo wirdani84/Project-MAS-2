@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to SwapSkill</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        #welcome-box {
+            margin: 20px auto;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to SwapSkill</h1>
+    <div id="welcome-box">
+        <input type="text" id="name-input" placeholder="Enter your name" />
+        <button onclick="greetUser()">Submit</button>
+    </div>
+    <h2 id="greeting-message" style="display: none;"></h2>
+
+    <script>
+        function greetUser() {
+            const nameInput = document.getElementById('name-input');
+            const name = nameInput.value.trim();
+            if (name) {
+                document.getElementById('welcome-box').style.display = 'none';
+                const greetingMessage = document.getElementById('greeting-message');
+                greetingMessage.textContent = `Hi ${name}, enjoy our community and have a great day!`;
+                greetingMessage.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
