@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #ba7cc7 0%, #a577c5 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-text {
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .upgrade-btn {
+    background-color: #e94e77;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 50px;
+  }
+  
+  .hero-content {
+    color: rgb(57, 8, 78);
+    max-width: 500px;
+  }
+  
+  .hero-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  .learn-more-btn {
+    background-color: #e94e77;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .sign-in-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    position: relative;
+    background-image: linear-gradient(90deg, rgba(255,220,220,0.3) 0px, rgba(255,220,220,0.3) 20px, transparent 20px, transparent 40px);
+  }
+  
+  .sign-in-card h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .sign-in-card input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-container input {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .sign-in-btn {
+    background-color: #5f43b2;
+    color: white;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .twitter-btn {
+    background-color: #1da1f2;
+    color: white;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .register-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .register-link {
+    color: #5f43b2;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Responsive styles for mobile */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      padding: 20px;
+    }
+    
+    nav {
+      margin-top: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+    }
+    
+    main {
+      flex-direction: column;
+      padding: 20px;
+    }
+    
+    .hero-content {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .sign-in-card {
+      width: 100%;
+      max-width: 350px;
+    }
+  }
