@@ -40,7 +40,10 @@
             if (name) {
                 document.getElementById('welcome-box').style.display = 'none';
                 const greetingMessage = document.getElementById('greeting-message');
-                greetingMessage.textContent = `Hi ${name}, Enjoy being part of our community and Have an awesome day!`;
+                greetingMessage.innerHTML = `<span style="display: block; font-size: 24px; 
+                    font-weight: bold;">Hi ${name}!</span>
+                    <span style="display: block; 
+                    margin-top: 10px;">Enjoy being part of our community and Have an awesome day!</span>`;
                 greetingMessage.style.display = 'block';
             }
         }
