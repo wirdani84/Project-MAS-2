@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Form submission handler
     const loginForm = document.getElementById('loginForm');
     if (loginForm) {
       loginForm.addEventListener('submit', function(event) {
@@ -18,17 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
           alert('You must agree to the Terms of Service');
           return;
         }
-        
-        // Here you would typically make an API call to authenticate the user
+    
         console.log('Login attempt:', { email, termsAccepted: termsChecked });
         alert('Login functionality would be implemented here');
-        
-        // For demonstration only - normally would redirect after successful login
-        // window.location.href = '/dashboard.html';
+
       });
     }
     
-    // Twitter login button handler
     const twitterBtn = document.querySelector('.twitter-btn');
     if (twitterBtn) {
       twitterBtn.addEventListener('click', function(event) {
@@ -38,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
     
-    // Learn more button animation
     const learnMoreBtn = document.querySelector('.learn-more-btn');
     if (learnMoreBtn) {
       learnMoreBtn.addEventListener('mouseover', function() {
