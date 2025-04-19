@@ -1,0 +1,22 @@
+{
+    "name": "backend-server",
+    "version": "1.0.0",
+    "description": "A backend server for the existing Visual Studio Code project.",
+    "main": "src/server.ts",
+    "scripts": {
+        "start": "ts-node src/server.ts",
+        "build": "tsc",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "typescript": "^4.5.4",
+        "ts-node": "^10.4.0",
+        "@types/node": "^16.11.7",
+        "@types/express": "^4.17.13"
+    },
+    "author": "",
+    "license": "ISC"
+}
