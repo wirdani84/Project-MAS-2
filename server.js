@@ -8,17 +8,23 @@ const PORT = 3000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Serve static files (HTML, CSS, JS)
+// Serve static files (HTML, CSS, JS, images)
 app.use(express.static(__dirname));
 
-// Handle login request
+// Route for homepage
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// Optional: handle login POST request
 app.post('/login', (req, res) => {
   const { email, password } = req.body;
 
+  // Dummy authentication logic
   if (email === 'test@example.com' && password === 'password123') {
-    res.status(200).json({ message: 'Login successful' });
+    return res.status(200).json({ message: 'Login successful' });
   } else {
-    res.status(401).json({ message: 'Invalid credentials' });
+    return res.status(401).json({ message: 'Invalid credentials' });
   }
 });
 
