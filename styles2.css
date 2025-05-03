@@ -1,0 +1,144 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+* Container for the h1 */
+.header-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    height: 100vh; 
+    z-index: 2; 
+}
+
+.header-logo {
+    position: absolute;
+    top: 20px; 
+    left: 50px;  
+    object-fit: contain;
+    width: 120px;
+    height: auto;
+    
+}
+
+.h1-box {
+    background-color: rgba(177, 162, 162, 0.7);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.slide-in {
+    font-size: 3rem;
+    color: rgb(243, 236, 236);
+    opacity: 0; 
+    transform: translateY(-75px);
+    animation: slideIn 3s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button.say-hi {
+    background-color: rgb(64, 41, 175);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#button-enter {
+    position: absolute;
+    top: 63%;
+    background-color: #527415;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    margin: 10px;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.video-container video {
+    content: url('https://cdn.pixabay.com/video/2016/01/29/1992-153555258_large.mp4" type="video/mp4');
+}
+
+
+
+
