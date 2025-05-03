@@ -3,6 +3,7 @@
 
 A full-stack web application for skill exchange — users can sign in and offer or learn skills in a community environment.
 
+<<<<<<< HEAD
 ## Live Demo
 
 After deployment, your app will be live at:  
@@ -13,6 +14,15 @@ After deployment, your app will be live at:
 ---
 
 ## 🚀 How to Deploy to Render
+=======
+## Live Demo at:  
+
+`[https://project-mas-2.onrender.com]`
+
+---
+
+## How to Deploy to Render
+>>>>>>> e139e4cb32c52a32aff7f095857bbc395b8bffd4
 
 ### 1. Push Project to GitHub
 
@@ -46,7 +56,11 @@ Click **Create Web Service**
 
 ---
 
+<<<<<<< HEAD
 ## 🧪 Local Development
+=======
+## Local Development
+>>>>>>> e139e4cb32c52a32aff7f095857bbc395b8bffd4
 
 To run locally:
 
@@ -55,11 +69,19 @@ npm install
 npm start
 ```
 
+<<<<<<< HEAD
 Visit: [http://localhost:3000](http://localhost:3000)
 
 ---
 
 ## 🧾 Features
+=======
+Visit: [http://localhost:3000]
+
+---
+
+## Features
+>>>>>>> e139e4cb32c52a32aff7f095857bbc395b8bffd4
 
 - Sign in form with email + password
 - Dummy login logic in backend
@@ -69,7 +91,11 @@ Visit: [http://localhost:3000](http://localhost:3000)
 
 ---
 
+<<<<<<< HEAD
 ## 🔐 Notes
+=======
+## Notes
+>>>>>>> e139e4cb32c52a32aff7f095857bbc395b8bffd4
 
 - Current login accepts only:  
   `email: test@example.com`  

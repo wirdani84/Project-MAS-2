@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "dependencies": {
     "body-parser": "^2.2.0",
@@ -24,3 +25,31 @@
   },
   "homepage": "https://github.com/wirdani84/Project-MAS-2#readme"
 }
+=======
+{
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0"
+  },
+  "name": "project-mas-2---backup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wirdani84/Project-MAS-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/wirdani84/Project-MAS-2/issues"
+  },
+  "homepage": "https://github.com/wirdani84/Project-MAS-2#readme"
+}
+>>>>>>> e139e4cb32c52a32aff7f095857bbc395b8bffd4
