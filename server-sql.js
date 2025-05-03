@@ -41,12 +41,12 @@ app.get('/', (req, res) => {
 // Handle login
 app.post('/login', (req, res) => {
   const { email, password } = req.body;
+
   db.run('INSERT INTO users (email, password) VALUES (?, ?)', [email, password], function (err) {
     if (err) return res.status(500).send('Database error.');
     res.redirect('/welcome.html');
   });
 });
-
 // Handle profile form
 app.post('/profile', (req, res) => {
   const { name, skills, interests, bio } = req.body;

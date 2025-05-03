@@ -33,14 +33,10 @@
     <div class="sign-in-card">    
       <h2>Sign In</h2>
       <form id="loginForm" action="/login" method="POST">
-        <input type="email" placeholder="Your email" required>
-        <input type="password" placeholder="Your password" required>
-        <div class="checkbox-container">
-          <input type="checkbox" id="terms" checked>
-          <label for="terms">I agree to the Terms of Service</label>
-        </div>
-        <button type="submit" class="sign-in-btn">Sign In</button>
-      </form>
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <button type="submit">Sign In</button>
+      </form>      
       <a href="#" class="twitter-btn">Login via Twitter</a>
       <div class="register-container">
         <span>Do you have an Account?</span>
