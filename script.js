@@ -45,3 +45,19 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   });
+
+    fetch('/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ email, password }),
+  })
+  .then(response => response.json())
+  .then(data => {
+    alert(data.message);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+  
