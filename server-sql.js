@@ -38,7 +38,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Handle login and redirect to welcome form
+// Handle login
 app.post('/login', (req, res) => {
   const { email, password } = req.body;
   db.run('INSERT INTO users (email, password) VALUES (?, ?)', [email, password], function (err) {
@@ -47,7 +47,7 @@ app.post('/login', (req, res) => {
   });
 });
 
-// Handle profile form submission
+// Handle profile form
 app.post('/profile', (req, res) => {
   const { name, skills, interests, bio } = req.body;
   db.run('INSERT INTO profiles (name, skills, interests, bio) VALUES (?, ?, ?, ?)',
@@ -57,12 +57,12 @@ app.post('/profile', (req, res) => {
   });
 });
 
-// Serve profile cards dynamically into HTML
+// Serve SkillSwappers page with static + dynamic profiles
 app.get('/skillswappers.html', (req, res) => {
   db.all('SELECT * FROM profiles', [], (err, rows) => {
     if (err) return res.status(500).send('Error loading profiles.');
 
-    let cards = rows.map(profile => `
+    let userCards = rows.map(profile => `
       <div class="card">
         <img src="https://via.placeholder.com/150" alt="${profile.name}">
         <h3>${profile.name}</h3>
@@ -72,12 +72,16 @@ app.get('/skillswappers.html', (req, res) => {
         <button>Learn More</button>
       </div>`).join('');
 
-    const html = fs.readFileSync(path.join(__dirname, 'skillswappers.html'), 'utf8');
-    const final = html.replace('<!-- Profile cards will be loaded here via server -->', cards);
-    res.send(final);
+    const staticHTML = fs.readFileSync(path.join(__dirname, 'skillswappers.html'), 'utf8');
+    const finalHTML = staticHTML.replace(
+      '<!-- Profile cards will be injected here by server -->',
+      userCards
+    );
+
+    res.send(finalHTML);
   });
 });
 
 app.listen(PORT, () => {
-  console.log(`[ACTIVE] SwapSkillers backend running at http://localhost:${PORT}`);
+  console.log(`✅ Server running at http://localhost:${PORT}`);
 });
