@@ -3,12 +3,9 @@
 
 A full-stack web application for skill exchange — users can sign in and offer or learn skills in a community environment.
 
-## Live Demo
+## Live Demo at:  
 
-After deployment, your app will be live at:  
-`https://your-app-name.onrender.com`
-
-*(Replace this with your actual Render URL after deployment)*
+`[https://project-mas-2.onrender.com]`
 
 ---
 
@@ -46,7 +43,7 @@ Click **Create Web Service**
 
 ---
 
-## 🧪 Local Development
+## Local Development
 
 To run locally:
 
@@ -55,11 +52,11 @@ npm install
 npm start
 ```
 
-Visit: [http://localhost:3000](http://localhost:3000)
+Visit: [http://localhost:3000]
 
 ---
 
-## 🧾 Features
+## Features
 
 - Sign in form with email + password
 - Dummy login logic in backend
@@ -69,7 +66,7 @@ Visit: [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🔐 Notes
+## Notes
 
 - Current login accepts only:  
   `email: test@example.com`  
