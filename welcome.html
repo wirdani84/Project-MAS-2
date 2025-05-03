@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to SwapSkillers</title>
+  <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to SwapSkillers</h1>
+    <div class="intro-flex">
+      <img src="Welcome.png" alt="Welcome" class="welcome-image">
+      <form class="user-info-form" action="/profile" method="POST">
+        <h2>Complete Your Profile</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="skills">Skills You Can Offer:</label>
+        <input type="text" id="skills" name="skills" required>
+
+        <label for="interests">Skills You Want to Learn:</label>
+        <input type="text" id="interests" name="interests" required>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
