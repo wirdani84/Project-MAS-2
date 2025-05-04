@@ -34,7 +34,6 @@ app.post('/profile', (req, res) => {
   res.redirect('/skillswappers.html');
 });
 
-
 // Optional future route for profile
 // app.post('/profile', (req, res) => {
 //   const { name, skills, interests, bio } = req.body;
