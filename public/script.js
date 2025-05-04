@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  }
-
   const learnMoreBtn = document.querySelector('.learn-more-btn');
   if (learnMoreBtn) {
     learnMoreBtn.addEventListener('mouseover', function () {
