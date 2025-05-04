@@ -25,6 +25,16 @@ app.post('/login', (req, res) => {
   res.redirect('/welcome.html');
 });
 
+app.post('/profile', (req, res) => {
+  const { name, skills, interests, bio } = req.body;
+
+  console.log('✅ Profile received:', name, skills, interests, bio);
+
+  // You could save this to a database — for now, just redirect
+  res.redirect('/skillswappers.html');
+});
+
+
 // Optional future route for profile
 // app.post('/profile', (req, res) => {
 //   const { name, skills, interests, bio } = req.body;
