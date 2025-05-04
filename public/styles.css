@@ -59,13 +59,16 @@
     text-align: center;
   }
   
-  .upgrade-btn {
-    background-color: #e94e77;
+  .pricing-btn {
+    padding: 8px 16px;
+    background-color: #ee58ab;
     color: white;
-    padding: 8px 20px;
-    border-radius: 20px;
     text-decoration: none;
-    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .pricing-btn:hover {
+    background-color: #5548d9;
   }
   
   main {
