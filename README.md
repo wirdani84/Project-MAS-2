@@ -70,6 +70,33 @@ Visit `http://localhost:3000`
   .env
   users.db
   ```
+Testing Strategy
+
+This project uses a combination of manual testing and code-level validation to ensure functionality and reliability across the full stack.
+
+🔹 Frontend Testing
+All forms (Sign In, Register, Profile Submission) were manually tested for:
+Required field validation
+Mismatched passwords
+Empty inputs
+Navigation and redirects after submission
+Visual inspection was done across multiple screen sizes (desktop and mobile) to ensure responsive design.
+
+🔹 Backend Testing
+All Express routes (/login, /register, /profile) were tested using:
+Valid and invalid POST data
+Console logging and response code validation
+Error handling is included for database operations (e.g. failed insert, invalid data).
+
+🔹 Integration Testing (Light)
+Full user flow was tested:
+New user registers → redirected to welcome page
+Profile info submitted → displayed on SkillSwappers page
+
+🔹 Future Enhancements
+Add automated unit tests using Jest or Mocha
+Implement route tests with Supertest
+Validate DB operations with mock datasets
 
 ## 🙋‍♀️ Questions?
 
