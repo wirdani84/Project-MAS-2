@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account – SkillSwap</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo-box">
+      <img src="Skillswap-Photoroom.png" alt="Logo">
+    </div>
+    <div class="form-box">
+      <h1>Create an Account</h1>
+      <p>By signing up, you agree to the Terms of Service.</p>
+
+      <form action="/register" method="POST">
+        <label for="email">E-MAIL</label>
+        <input type="email" name="email" required placeholder="Your email">
+
+        <label for="password">PASSWORD</label>
+        <div class="password-group">
+          <input type="password" name="password" required placeholder="Password">
+          <input type="password" name="repeat" required placeholder="Repeat">
+        </div>
+
+        <button type="submit" class="signup-btn">Sign Up</button>
+      </form>
+
+      <div class="socials">
+        <span>OR</span>
+        <a href="https://facebook.com" target="_blank">📘</a>
+        <a href="https://twitter.com" target="_blank">🐦</a>
+        <a href="https://google.com" target="_blank">🟢</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
