@@ -1,114 +1,83 @@
+SkillSwap Project
 
-# SkillSwap Project
+SkillSwap is a full-stack web application that allows users to exchange skills through a collaborative, non-monetary platform. Users can sign up, create profiles, and connect with others by offering and requesting specific skills. The app is built using Node.js, Express, SQLite, and HTML/CSS/JS on the front end.
 
-A full-stack web application for skill exchange — users can sign in and offer or learn skills in a community environment.
+🔧 Features
 
-<<<<<<< HEAD
-## Live Demo
+Sign in and registration system
 
-After deployment, your app will be live at:  
-`https://your-app-name.onrender.com`
+Create a user profile with skills and interests
 
-*(Replace this with your actual Render URL after deployment)*
+SkillSwappers page showcasing submitted profiles
 
----
+Clean, responsive UI
 
-## 🚀 How to Deploy to Render
-=======
-## Live Demo at:  
+Deployed using Render
 
-`[https://project-mas-2.onrender.com]`
+🚀 Live Demo
 
----
+Visit SkillSwap on Render
 
-## How to Deploy to Render
->>>>>>> e139e4cb32c52a32aff7f095857bbc395b8bffd4
+📂 Project Structure
 
-### 1. Push Project to GitHub
+project-mas-2/
+├── public/
+│   ├── index.html
+│   ├── register.html
+│   ├── welcome.html
+│   ├── skillswappers.html
+│   ├── styles.css
+│   ├── register.css
+│   ├── images/
+│   │   └── (uploaded profile images, logo, etc.)
+├── server.js
+├── users.db
+├── package.json
 
-If not already done, push your local project:
+🧠 Technologies Used
 
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-git push -u origin main
-```
+Backend: Node.js, Express
 
-### 2. Create a Render Account
+Database: SQLite
 
-- Go to [https://render.com](https://render.com)
-- Sign up with your GitHub account and authorize access
+Frontend: HTML, CSS, JavaScript
 
-### 3. Create a New Web Service
+Deployment: Render
 
-- Click **“New” > “Web Service”**
-- Select your GitHub repo (e.g., `skillswap-project`)
-- Set up:
-  - **Environment**: `Node`
-  - **Build Command**: `npm install`
-  - **Start Command**: `npm start`
-  - **Root Directory**: leave blank (unless server.js is in a subfolder)
+📥 Installation (Optional for local testing)
 
-Click **Create Web Service**
-
----
-
-<<<<<<< HEAD
-## 🧪 Local Development
-=======
-## Local Development
->>>>>>> e139e4cb32c52a32aff7f095857bbc395b8bffd4
-
-To run locally:
-
-```bash
+git clone https://github.com/wirdani84/Project-MAS-2.git
+cd Project-MAS-2
 npm install
-npm start
-```
+node server.js
 
-<<<<<<< HEAD
-Visit: [http://localhost:3000](http://localhost:3000)
+Visit http://localhost:3000
 
----
+🔐 Notes for Instructor
 
-## 🧾 Features
-=======
-Visit: [http://localhost:3000]
+This project demonstrates full-stack integration.
 
----
+All user interaction is routed through Express with SQLite data persistence.
 
-## Features
->>>>>>> e139e4cb32c52a32aff7f095857bbc395b8bffd4
+Registration and profile creation are stored and dynamically loaded.
 
-- Sign in form with email + password
-- Dummy login logic in backend
-- Frontend styled with HTML/CSS
-- Animated button interactions
-- Ready for future database integration
+External assets (e.g., profile pictures, logo) are included in the public/images/ directory.
 
----
+The UI is designed to be minimal and user-friendly, with focus on functionality.
 
-<<<<<<< HEAD
-## 🔐 Notes
-=======
-## Notes
->>>>>>> e139e4cb32c52a32aff7f095857bbc395b8bffd4
+A sample account for testing:
 
-- Current login accepts only:  
-  `email: test@example.com`  
-  `password: password123`
+Email: test@example.com
 
-- Be sure to add a `.gitignore` with:
-  ```
-  node_modules/
-  .env
-  ```
+Password: password123
 
----
+Be sure to include a .gitignore file with:
 
-## 📄 License
+node_modules/
+.env
+users.db
 
-MIT — free to use and modify.
+🙋‍♀️ Questions?
+
+For any inquiries or demo requests, please contact the developer.
+
